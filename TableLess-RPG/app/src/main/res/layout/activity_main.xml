@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.bruno.tableless_rpg.MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:text="Character Info"
+                android:id="@+id/charInfo"
+                android:layout_column="0"
+                android:layout_width="175dp"
+                android:layout_height="150dp" />
+
+            <Button
+                android:layout_width="175dp"
+                android:layout_height="150dp"
+                android:text="Attributes"
+                android:id="@+id/idAttr"
+                android:layout_column="1" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:text="Equipment"
+                android:id="@+id/idEquip"
+                android:layout_column="0"
+                android:layout_width="175dp"
+                android:layout_height="150dp" />
+
+            <Button
+                android:layout_width="175dp"
+                android:layout_height="150dp"
+                android:text="Spells"
+                android:id="@+id/idSpells"
+                android:layout_column="1" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:text="Skills"
+                android:id="@+id/idSkills"
+                android:layout_column="0"
+                android:layout_width="175dp"
+                android:layout_height="150dp" />
+
+            <Button
+                android:layout_width="175dp"
+                android:layout_height="150dp"
+                android:text="Feats"
+                android:id="@+id/idFeats"
+                android:layout_column="1" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:text="Logout"
+                android:id="@+id/idLogout"
+                android:layout_column="0"
+                android:layout_marginTop="20dp" />
+
+            <Button
+                android:text="Connect"
+                android:id="@+id/idConnect"
+                android:layout_column="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" />
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>
