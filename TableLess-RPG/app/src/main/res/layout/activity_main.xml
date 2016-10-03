@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.bruno.tableless_rpg.MainActivity">
+    tools:context=".activity.MainActivity">
 
     <TableLayout
         android:layout_width="match_parent"
@@ -15,10 +15,6 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:orientation="vertical">
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"></TableRow>
 
         <TableRow
             android:layout_width="match_parent"
