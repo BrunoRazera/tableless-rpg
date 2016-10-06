@@ -8,8 +8,7 @@
         android:id="@+id/character_name_edit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/character_name"
-        />
+        android:hint="@string/character_name" />
 
     <LinearLayout
         android:id="@+id/character_info"
@@ -109,8 +108,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_below="@+id/character_characteristics"
-        android:id="@+id/linearLayout">
-
+        android:id="@+id/character_resume">
 
         <EditText
             android:layout_width="0dp"
@@ -131,7 +129,30 @@
             />
 
         </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/character_resume"
+        android:id="@+id/character_estatistics">
 
+        <ProgressBar
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/character_expbar"
+            android:layout_alignParentStart="true"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+            android:progress="@android:integer/config_mediumAnimTime" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="0/ 1000 Level 1"
+            android:id="@+id/character_level"
+            android:layout_alignParentStart="true" />
+        </LinearLayout>
 
 
     <!--
