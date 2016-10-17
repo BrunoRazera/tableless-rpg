@@ -108,23 +108,23 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_below="@+id/character_characteristics"
+        android:layout_above="@+id/character_estatistics"
         android:id="@+id/character_resume">
 
         <EditText
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:inputType="textMultiLine"
             android:layout_weight="1"
             android:ems="10"
             android:hint="Resumo"
             android:id="@+id/character_resume_edit"
             android:layout_alignParentBottom="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginBottom="65dp" />
+            android:layout_alignParentStart="true"/>
 
         <ImageView
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             />
 
@@ -133,8 +133,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_below="@+id/character_resume"
-        android:id="@+id/character_estatistics">
+        android:id="@+id/character_estatistics"
+        android:layout_alignParentBottom="true">
 
         <ProgressBar
             android:layout_width="0dp"
