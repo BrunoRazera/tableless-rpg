@@ -1,4 +1,4 @@
-package com.example.bruno.tableless_rpg.activity;
+package com.example.bruno.tableless_rpg.activity.views;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -21,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(MainActivity.this, CharacterActivity.class);
                 MainActivity.this.startActivity(i);
+
+                startActivity(CharacterActivity.launchActivity(getCacheDir(), "123"));
             }
         };
         assert btn != null;
