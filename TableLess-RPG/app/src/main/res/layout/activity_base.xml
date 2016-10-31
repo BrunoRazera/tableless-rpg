@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/character_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/character_name_edit">
+
+        <Spinner
+            android:id="@+id/character_race_edit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/raca"
+            />
+
+        <Spinner
+            android:id="@+id/character_class_edit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Classe"
+            />
+
+        <Spinner
+            android:id="@+id/character_alignment_edit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:hint="Tendência"
+            />
+
+        <Spinner
+            android:id="@+id/character_deity_edit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:hint="Divindade"
+            />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/character_characteristics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/character_info">
+
+        <Spinner
+            android:id="@+id/size_edit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Tamanho"
+            />
+
+        <EditText
+            android:id="@+id/character_height_edit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Altura"
+            android:inputType="numberDecimal"
+            />
+
+        <EditText
+            android:id="@+id/character_weight_edit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Peso"
+            android:inputType="number"
+            />
+
+        <Spinner
+            android:id="@+id/character_genre_edit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Gênero"
+            />
+
+        <Spinner
+            android:id="@+id/character_skin_edit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Cor"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/character_characteristics"
+        android:layout_above="@+id/character_estatistics"
+        android:id="@+id/character_resume">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:inputType="textMultiLine"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Resumo"
+            android:id="@+id/character_resume_edit"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/character_estatistics"
+        android:layout_alignParentBottom="true">
+
+        <ProgressBar
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/character_expbar"
+            android:layout_alignParentStart="true"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+            android:progress="@android:integer/config_mediumAnimTime" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="0/ 1000 Level 1"
+            android:id="@+id/character_level"
+            android:layout_alignParentStart="true" />
+    </LinearLayout>
+
+
+    <!--
+     <Spinner
+         android:id="@+id/alignment_edit"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/character_name_edit"
+         android:hint="Tendência"
+         />
+
+     <Spinner
+         android:id="@+id/alignment_edit"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/character_name_edit"
+         android:hint="Tendência"
+         />
+         -->
+
+</RelativeLayout>

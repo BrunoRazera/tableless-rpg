@@ -1,4 +1,4 @@
-package com.example.bruno.tableless_rpg.activity.views;
+package com.example.bruno.tableless_rpg.activity.controllers;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -19,10 +19,10 @@ public class MainActivity extends AppCompatActivity {
         View.OnClickListener listnr = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this, CharacterActivity.class);
-                MainActivity.this.startActivity(i);
+                //Intent i = new Intent(MainActivity.this, CharacterActivity.class);
+                //MainActivity.this.startActivity(i);
 
-                startActivity(CharacterActivity.launchActivity(getCacheDir(), "123"));
+                startActivity(CharacterActivity.launchActivity(MainActivity.this));
             }
         };
         assert btn != null;
