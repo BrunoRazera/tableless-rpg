@@ -1,0 +1,73 @@
+<script>
+
+	{
+		'name':'atordoado',
+		'type':'debuff',
+		'value':{'CA':'2', 'DEX':'-DEX'},
+		'description':'Um personagem atordoado larga qualquer coisa que estiver segurando
+		nas mãos, é incapaz de realizar ações, sofre -2 de penalidade na CA e perde
+		seu bônus de Dexterity na CA (se houver).'
+	}
+
+	{
+		'name':'flanquear'.
+		'type':'buff',
+		'value':{'BBA':'2'},
+		'description':'Posicionar-se do lado oposto de um adversário ameaçado por outro
+		aliado. O personagem que estiver flanqueando recebe +2 de bônus de flanquear para
+		suas jogadas de ataque. Um ladino que estiver flanqueando um adversário pode
+		desferir um ataque furtivo contra aquela vítima.'
+
+	}
+
+	{
+		'name':'indefeso',
+		'type':{'debuff','buff'}
+		'value':{'DEX':'5','BBA':'4'},
+		'description':'Paralisado, amarrado, imobilizado, dormindo, inconsciente ou totalmente
+		à mercê do oponente. Considera-se que uma vítima indefesa possui Destreza
+		0 (-5 de penalidade). Os ataques corpo a corpo desferidos contra uma vítima indefesa
+		recebem +4 de bônus. Um atacante é capaz de executar um golpe de misericórdia
+		contra um oponente indefeso.'
+
+
+	}
+
+	{
+
+		'name':'vigor do urso',
+		'type':'buff',
+		'value':{'TPV':'4'},
+		'description':'O alvo fica mais vigoroso e resistente. Esta magia
+		concede +4 de bônus de melhoria para a Constituição,
+		adicionando os benefícios normais para pontos de vida,
+		testes de resistência de Fortitude, testes de Constituição
+		e outros usos do modificador de Constituição.
+		Os pontos de vida recebidos por um aumento
+		temporário no valor de Constituição não são pontos
+		de vida temporários. Eles desaparecem assim que a
+		Constituição do alvo voltar ao normal. Eles não são
+		perdidos primeiro da mesma forma que os pontos de
+		vida temporários são'
+
+	}
+
+	{
+
+		'name':'passos longos',
+		'type':'buff',
+		'value':{'DESLOC':'3'},
+		'description':'Essa magia aumenta o deslocamento por terra do
+		personagem em 3 m. (Esse ajuste é considerado um
+		bônus de melhoria.) Ele não tem efeito em outros tipos
+		de deslocamento como cavar, escalar, voar ou nadar.
+		Componente Material: Um pouco de sujeira.'
+
+
+	}
+
+
+
+
+
+</script>
