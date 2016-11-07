@@ -5,51 +5,149 @@
     android:layout_height="match_parent">
 
     <LinearLayout
+        android:id="@+id/character_attributes"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent">
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/character_info"
-        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_below="@+id/character_name_edit">
+        android:layout_alignParentLeft="true">
 
-        <Spinner
-            android:id="@+id/character_race_edit"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:entries="@array/raca"
-            />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="3">
 
-        <Spinner
-            android:id="@+id/character_class_edit"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:hint="Classe"
-            />
+            <TableRow>
+                <TextView
+                    android:text="Attr"
+                    android:padding="3dip"
+                    android:textSize="25sp"
+                    android:textAlignment="center"/>
+                <TextView
+                    android:text="Base"
+                    android:padding="3dip"
+                    android:textSize="25sp"
+                    android:textAlignment="center"/>
+                <TextView
+                    android:text="Mod"
+                    android:padding="3dip"
+                    android:textSize="25sp"
+                    android:textAlignment="center"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="STR"
+                    android:textStyle="bold"
+                    android:padding="5dip"
+                    android:background="#000"
+                    android:textColor="#fff"
+                    android:textSize="25sp"
+                    android:textAlignment="center"/>
+                <EditText
+                    android:inputType="number"
+                    android:id="@+id/edit_strength"/>
 
-        <Spinner
-            android:id="@+id/character_alignment_edit"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1.2"
-            android:hint="Tendência"
-            />
+                <EditText
+                    android:inputType="number"
+                    android:id="@+id/edit_strength_modifier"
+                    android:padding="10dip"/>
 
-        <Spinner
-            android:id="@+id/character_deity_edit"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1.2"
-            android:hint="Divindade"
-            />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="DEX"
+                    android:textStyle="bold"
+                    android:padding="5dip"
+                    android:background="#000"
+                    android:textColor="#fff"
+                    android:textSize="25sp"
+                    android:textAlignment="center"/>
+                <EditText
+                    android:inputType="number"
+                    android:id="@+id/edit_dexterity"/>
 
+                <EditText
+                    android:inputType="number"
+                    android:id="@+id/edit_dexterity_modifier"
+                    android:padding="10dip"/>
 
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="CON"
+                    android:textStyle="bold"
+                    android:padding="5dip"
+                    android:background="#000"
+                    android:textColor="#fff"
+                    android:textSize="25sp"
+                    android:textAlignment="center"/>
+                <EditText
+                    android:inputType="number"
+                    android:id="@+id/edit_constitution"/>
+
+                <EditText
+                    android:inputType="number"
+                    android:id="@+id/edit_constitution_modifier"
+                    android:padding="10dip"/>
+
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="INT"
+                    android:textStyle="bold"
+                    android:padding="5dip"
+                    android:background="#000"
+                    android:textColor="#fff"
+                    android:textSize="25sp"
+                    android:textAlignment="center"/>
+                <EditText
+                    android:inputType="number"
+                    android:id="@+id/edit_intelligence"/>
+
+                <EditText
+                    android:inputType="number"
+                    android:id="@+id/edit_intelligence_modifier"
+                    android:padding="10dip"/>
+
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="WIS"
+                    android:textStyle="bold"
+                    android:padding="5dip"
+                    android:background="#000"
+                    android:textColor="#fff"
+                    android:textSize="25sp"
+                    android:textAlignment="center"/>
+                <EditText
+                    android:inputType="number"
+                    android:id="@+id/edit_wisdom"/>
+
+                <EditText
+                    android:inputType="number"
+                    android:id="@+id/edit_wisdom_modifier"
+                    android:padding="10dip"/>
+
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="CHA"
+                    android:textStyle="bold"
+                    android:padding="5dip"
+                    android:background="#000"
+                    android:textColor="#fff"
+                    android:textSize="25sp"
+                    android:textAlignment="center"/>
+                <EditText
+                    android:inputType="number"
+                    android:id="@+id/edit_charisma"/>
+
+                <EditText
+                    android:inputType="number"
+                    android:id="@+id/edit_charisma_modifier"
+                    android:padding="10dip"/>
+
+            </TableRow>
+        </TableLayout>
 
     </LinearLayout>
     <LinearLayout
@@ -57,49 +155,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_below="@+id/character_info">
-
-        <Spinner
-            android:id="@+id/size_edit"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:hint="Tamanho"
-            />
-
-        <EditText
-            android:id="@+id/character_height_edit"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:hint="Altura"
-            android:inputType="numberDecimal"
-            />
-
-        <EditText
-            android:id="@+id/character_weight_edit"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:hint="Peso"
-            android:inputType="number"
-            />
-
-        <Spinner
-            android:id="@+id/character_genre_edit"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:hint="Gênero"
-            />
-
-        <Spinner
-            android:id="@+id/character_skin_edit"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:hint="Cor"
-            />
+        android:layout_alignRight="@+id/character_attributes">
 
 
     </LinearLayout>
@@ -111,22 +167,6 @@
         android:layout_above="@+id/character_estatistics"
         android:id="@+id/character_resume">
 
-        <EditText
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:inputType="textMultiLine"
-            android:layout_weight="1"
-            android:ems="10"
-            android:hint="Resumo"
-            android:id="@+id/character_resume_edit"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentStart="true"/>
-
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            />
 
     </LinearLayout>
     <LinearLayout
@@ -136,41 +176,5 @@
         android:id="@+id/character_estatistics"
         android:layout_alignParentBottom="true">
 
-        <ProgressBar
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:id="@+id/character_expbar"
-            android:layout_alignParentStart="true"
-            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
-            android:progress="@android:integer/config_mediumAnimTime" />
-
-        <EditText
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.3"
-            android:text="0/ 1000 Level 1"
-            android:id="@+id/character_level"
-            android:layout_alignParentStart="true" />
     </LinearLayout>
-
-
-    <!--
-     <Spinner
-         android:id="@+id/alignment_edit"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:layout_below="@+id/character_name_edit"
-         android:hint="Tendência"
-         />
-
-     <Spinner
-         android:id="@+id/alignment_edit"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:layout_below="@+id/character_name_edit"
-         android:hint="Tendência"
-         />
-         -->
-
 </RelativeLayout>
