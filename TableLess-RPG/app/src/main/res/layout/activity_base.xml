@@ -5,17 +5,24 @@
     android:layout_height="match_parent">
 
     <LinearLayout
+
         android:id="@+id/character_attributes"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_alignParentLeft="true">
 
         <TableLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:stretchColumns="3">
-
+            android:id="@+id/character_base_attrs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="20dp"
+            android:stretchColumns="0, 1, 2"
+            android:paddingRight="3dp">
+        
             <TableRow>
                 <TextView
                     android:text="Attr"
@@ -24,7 +31,6 @@
                     android:textAlignment="center"/>
                 <TextView
                     android:text="Base"
-                    android:padding="3dip"
                     android:textSize="25sp"
                     android:textAlignment="center"/>
                 <TextView
@@ -148,33 +154,31 @@
 
             </TableRow>
         </TableLayout>
+        <TableLayout
+            android:id="@+id/character_combat_attrs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:stretchColumns="0">
 
-    </LinearLayout>
-    <LinearLayout
-        android:id="@+id/character_characteristics"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_alignRight="@+id/character_attributes">
+            <TableRow>
+                <TextView
+                    android:text="CHA"
+                    android:textStyle="bold"
+                    android:padding="5dip"
+                    android:background="#000"
+                    android:textColor="#fff"
+                    android:textSize="25sp"
+                    android:textAlignment="center"/>
+                <EditText
+                    android:inputType="number"
+                    android:id="@+id/edit_charisma"/>
 
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_below="@+id/character_characteristics"
-        android:layout_above="@+id/character_estatistics"
-        android:id="@+id/character_resume">
-
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:id="@+id/character_estatistics"
-        android:layout_alignParentBottom="true">
-
+                <EditText
+                    android:inputType="number"
+                    android:id="@+id/edit_charisma_modifier"
+                    android:padding="10dip"/>
+            </TableRow>
+        </TableLayout>
     </LinearLayout>
 </RelativeLayout>
