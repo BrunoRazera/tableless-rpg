@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button btn = (Button) findViewById(R.id.charInfo);
+        Button btn2 = (Button) findViewById(R.id.idAttr);
 
         View.OnClickListener listnr = new View.OnClickListener() {
             @Override
@@ -25,8 +26,16 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(CharacterActivity.launchActivity(MainActivity.this));
             }
         };
+        View.OnClickListener listnr2 = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(BaseActivity.launchActivity(MainActivity.this));
+            }
+        };
+
         assert btn != null;
         btn.setOnClickListener(listnr);
+        btn2.setOnClickListener(listnr2);
     }
 
 

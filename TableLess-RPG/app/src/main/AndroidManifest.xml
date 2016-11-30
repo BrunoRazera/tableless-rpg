@@ -16,6 +16,7 @@
             </intent-filter>
         </activity>
         <activity android:label="@string/app_name" android:name=".activity.controllers.CharacterActivity"/>
+        <activity android:label="TableLess-RPG" android:name=".activity.controllers.BaseActivity"/>
     </application>
 
 </manifest>
