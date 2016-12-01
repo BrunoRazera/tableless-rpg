@@ -1,4 +1,4 @@
-package com.example.bruno.tableless_rpg.activity.views;
+package com.example.bruno.tableless_rpg.activity.controllers;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -15,18 +15,27 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button btn = (Button) findViewById(R.id.charInfo);
+        Button btn2 = (Button) findViewById(R.id.idAttr);
 
         View.OnClickListener listnr = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this, CharacterActivity.class);
-                MainActivity.this.startActivity(i);
+                //Intent i = new Intent(MainActivity.this, CharacterActivity.class);
+                //MainActivity.this.startActivity(i);
 
-                startActivity(CharacterActivity.launchActivity(getCacheDir(), "123"));
+                startActivity(CharacterActivity.launchActivity(MainActivity.this));
             }
         };
+        View.OnClickListener listnr2 = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(BaseActivity.launchActivity(MainActivity.this));
+            }
+        };
+
         assert btn != null;
         btn.setOnClickListener(listnr);
+        btn2.setOnClickListener(listnr2);
     }
 
 

@@ -1,4 +1,4 @@
-package com.example.bruno.tableless_rpg.activity.views;
+package com.example.bruno.tableless_rpg.activity.controllers;
 
 import android.content.Context;
 import android.content.Intent;
@@ -7,11 +7,12 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.example.bruno.tableless_rpg.R;
 
+import java.io.File;
+
 public class CharacterActivity extends AppCompatActivity {
 
-    public static Intent launchActivity(Context context, String characterId) {
+    public static Intent launchActivity(Context context) {
         Intent intent = new Intent(context, CharacterActivity.class);
-        intent.putExtra("charId", characterId);
         return intent;
     }
 

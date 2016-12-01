@@ -7,89 +7,110 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".activity.views.MainActivity">
+    tools:context=".activity.controllers.MainActivity">
 
-    <TableLayout
+    <RelativeLayout
+        android:id="@+id/menu_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:orientation="vertical">
+        android:layout_above="@+id/login_bar"
+        android:layout_centerHorizontal="true">
 
-        <TableRow
+        <LinearLayout
+            android:id="@+id/line_1"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true">
 
             <Button
-                android:text="Character Info"
                 android:id="@+id/charInfo"
-                android:layout_column="0"
-                android:layout_width="175dp"
-                android:layout_height="150dp" />
+                android:text="Character Info"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                />
 
             <Button
-                android:layout_width="175dp"
-                android:layout_height="150dp"
-                android:text="Attributes"
                 android:id="@+id/idAttr"
-                android:layout_column="1" />
-        </TableRow>
+                android:text="Attributes"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
 
-        <TableRow
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line_2"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line_1"
+            android:layout_alignEnd="@+id/line_1">
 
             <Button
-                android:text="Equipment"
                 android:id="@+id/idEquip"
-                android:layout_column="0"
-                android:layout_width="175dp"
-                android:layout_height="150dp" />
+                android:text="Equipment"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
 
             <Button
-                android:layout_width="175dp"
-                android:layout_height="150dp"
-                android:text="Spells"
                 android:id="@+id/idSpells"
-                android:layout_column="1" />
-        </TableRow>
+                android:text="Spells"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
 
-        <TableRow
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line_3"
+            android:layout_below="@id/line_2"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/line_2">
 
             <Button
-                android:text="Skills"
                 android:id="@+id/idSkills"
-                android:layout_column="0"
-                android:layout_width="175dp"
-                android:layout_height="150dp" />
+                android:text="Skills"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
 
             <Button
-                android:layout_width="175dp"
-                android:layout_height="150dp"
-                android:text="Feats"
                 android:id="@+id/idFeats"
-                android:layout_column="1" />
-        </TableRow>
+                android:text="Feats"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+        </LinearLayout>
 
-            <Button
-                android:text="Logout"
-                android:id="@+id/idLogout"
-                android:layout_column="0"
-                android:layout_marginTop="20dp" />
+    </RelativeLayout>
 
-            <Button
-                android:text="Connect"
-                android:id="@+id/idConnect"
-                android:layout_column="1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp" />
-        </TableRow>
-    </TableLayout>
+    <LinearLayout
+        android:id="@+id/login_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/idLogout"
+            android:text="Logout"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/idConnect"
+            android:text="Connect"
+            android:layout_alignRight="@+id/idLogout"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
 </RelativeLayout>

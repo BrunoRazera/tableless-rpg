@@ -22,7 +22,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:entries="@array/raca"
+            android:entries="@array/race"
             />
 
         <Spinner
@@ -30,7 +30,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:hint="Classe"
+            android:entries="@array/char_class"
             />
 
         <Spinner
@@ -38,7 +38,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1.2"
-            android:hint="Tendência"
+            android:entries="@array/alignment"
             />
 
         <Spinner
@@ -46,7 +46,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1.2"
-            android:hint="Divindade"
+            android:entries="@array/deity"
             />
 
 
@@ -64,7 +64,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:hint="Tamanho"
+            android:entries="@array/size"
             />
 
         <EditText
@@ -90,7 +90,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:hint="Gênero"
+            android:entries="@array/genre"
             />
 
         <Spinner
@@ -98,7 +98,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:hint="Cor"
+            android:entries="@array/skin"
             />
 
 
