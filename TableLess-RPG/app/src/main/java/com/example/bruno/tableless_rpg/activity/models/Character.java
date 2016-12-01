@@ -1,19 +1,17 @@
 package com.example.bruno.tableless_rpg.activity.models;
 
-import android.text.Layout;
-
 import io.realm.RealmObject;
 
 /**
  * Created by bruno on 24/10/16.
  */
-public class Character{
+public class Character extends RealmObject{
 
     private String name;
-    private Player player;
-    private Race race;
-    private PlayerClass playerClass;
-    private Alignment alignment;
+    private String player;
+    private String race;
+    private String playerClass;
+    private String alignment;
     private String deity;
     private String genre;
     private float hight;
@@ -24,30 +22,6 @@ public class Character{
     private int xp;
     private String skin;
 
-    public Character(
-            String name, Player player, Race race,
-            PlayerClass playerClass, Alignment alignment,
-            String deity, String genre, float hight,
-            int weight, int age, int level, String apearence,
-            int xp, String skin, String size
-    ) {
-        this.name = name;
-        this.player = player;
-        this.race = race;
-        this.playerClass = playerClass;
-        this.alignment = alignment;
-        this.deity = deity;
-        this.genre = genre;
-        this.hight = hight;
-        this.weight = weight;
-        this.age = age;
-        this.level = level;
-        this.apearence = apearence;
-        this.xp = xp;
-        this.skin = skin;
-        this.size = size;
-    }
-
     public String getName() {
         return name;
     }
@@ -56,35 +30,35 @@ public class Character{
         this.name = name;
     }
 
-    public Player getPlayer() {
+    public String getPlayer() {
         return player;
     }
 
-    public void setPlayer(Player player) {
+    public void setPlayer(String player) {
         this.player = player;
     }
 
-    public Race getRace() {
+    public String getRace() {
         return race;
     }
 
-    public void setRace(Race race) {
+    public void setRace(String race) {
         this.race = race;
     }
 
-    public PlayerClass getPlayerClass() {
+    public String getPlayerClass() {
         return playerClass;
     }
 
-    public void setPlayerClass(PlayerClass playerClass) {
+    public void setPlayerClass(String playerClass) {
         this.playerClass = playerClass;
     }
 
-    public Alignment getAlignment() {
+    public String getAlignment() {
         return alignment;
     }
 
-    public void setAlignment(Alignment alignment) {
+    public void setAlignment(String alignment) {
         this.alignment = alignment;
     }
 
@@ -159,14 +133,4 @@ public class Character{
     public void setSkin(String skin) {
         this.skin = skin;
     }
-
-    public String getSize() {
-        return size;
-    }
-
-    public void setSize(String size) {
-        this.size = size;
-    }
-
-    private String size;
 }
