@@ -1,7 +1,41 @@
 <resources>
     <string name="app_name">TableLess-RPG</string>
     <string name="character_name">Nome do personagem</string>
-    <string-array name="raca">
+    <string-array name="race">
         <item>Orc</item>
+        <item>Human</item>
+    </string-array>
+
+    <string-array name="char_class">
+        <item>warrior</item>
+        <item>mage</item>
+    </string-array>
+    
+    <string-array name="alignment">
+        <item>good</item>
+        <item>neutral</item>
+        <item>bad</item>
+    </string-array>
+
+    <string-array name="deity">
+        <item>none</item>
+        <item>someone</item>
+    </string-array>
+
+    <string-array name="size">
+        <item>big</item>
+        <item>normal</item>
+        <item>small</item>
+    </string-array>
+
+    <string-array name="genre">
+        <item>male</item>
+        <item>female</item>
+    </string-array>
+
+    <string-array name="skin">
+        <item>common</item>
+        <item>green</item>
+        <item>blue</item>
     </string-array>
 </resources>

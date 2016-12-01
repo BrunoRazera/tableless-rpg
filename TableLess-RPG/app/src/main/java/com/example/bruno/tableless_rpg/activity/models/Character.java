@@ -2,10 +2,12 @@ package com.example.bruno.tableless_rpg.activity.models;
 
 import android.text.Layout;
 
+import io.realm.RealmObject;
+
 /**
  * Created by bruno on 24/10/16.
  */
-public class Character {
+public class Character{
 
     private String name;
     private Player player;
